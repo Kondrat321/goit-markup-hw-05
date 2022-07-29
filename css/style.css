@@ -293,8 +293,8 @@ flex-basis: calc((100% - 60px)/3);
     border-radius: 50%;
     background-color: #FFFFFF;
     transition-property: background-color, color;
-    transition-duration: 3000ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -337,10 +337,16 @@ flex-basis: calc((100% - 60px)/3);
     border:rgba(175, 177, 184, 1);
     border-radius: 4px;
     border: 1px solid rgba(175, 177, 184, 1);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .partner-list-icon{
-    fill:#AFB1B8; 
+    fill:#AFB1B8;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partner-list-link:hover,
 .partner-list-link:focus{
@@ -462,6 +468,9 @@ footer{
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon{
     fill: #FFFFFF;
