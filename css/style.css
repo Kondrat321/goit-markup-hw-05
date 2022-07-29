@@ -293,7 +293,7 @@ flex-basis: calc((100% - 60px)/3);
     border-radius: 50%;
     background-color: #FFFFFF;
     transition-property: background-color, color;
-    transition-duration: 250ms;
+    transition-duration: 3000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .social-list-link:hover,
