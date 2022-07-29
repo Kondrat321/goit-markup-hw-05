@@ -68,6 +68,9 @@ ul{
     margin-left: auto;
     display: flex;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone{
     color: var(--secondary-text-color);
@@ -76,26 +79,29 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon{
     fill: currentColor;
     margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
  .header-icon:hover,
  .header-icon:focus{
     fill: currentColor;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 .mail:hover,
 .mail:focus{
     color: var(--accent-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone:hover,
 .phone:focus{
     color: var(--accent-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container{
     width: 1200px;
@@ -177,13 +183,17 @@ ul{
 }
 .filter .button{
     font-family: inherit;
-    color:var(--primary-text-color); 
+    color:var(--primary-text-color);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter .button{
     font-family: inherit;
     background-color: #F5F4FA;
 }
-.filter .button:hover,.filter .button:focus{
+.filter .button:hover,
+.filter .button:focus{
     color:#FFFFFF;
     background-color: var(--accent-color);    
 }
@@ -282,6 +292,9 @@ flex-basis: calc((100% - 60px)/3);
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -293,6 +306,9 @@ flex-basis: calc((100% - 60px)/3);
 }
 .social-list-icon{
     fill:#AFB1B8;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 /* Partners */
 .partners{
