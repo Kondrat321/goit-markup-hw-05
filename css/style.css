@@ -270,6 +270,24 @@ flex-basis: calc((100% - 60px)/3);
     text-align: left;
     gap: 30px;
 }
+.products{
+    position: relative;
+}
+.products-card{
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
 /* Title */
 .employe{
     padding-top: 94px;
@@ -420,7 +438,7 @@ address{
     
 }
 .sample{
-    position: relative;
+   
 }
 .sample-list-img{
     position: relative;
@@ -517,6 +535,48 @@ background-color: var(--accent-color);
 .footer-general-container{
     display: flex;
     align-items: baseline;
+}
+/* modal window */
+.backdrop{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+.modal{
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.backdrop.is-hidden{
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+}
+.modal-close-btn-icon{
+    width: 11px;
+    height: 11px;
+}
+.modal-close-button{
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 }
 
 
