@@ -58,6 +58,15 @@ ul{
 .link.curent{
     color: var(--accent-color);
 }
+.link{
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
 .curent:after {
     position: absolute;
     content:'';
@@ -201,8 +210,9 @@ ul{
 .filter .button{
     font-family: inherit;
     color:var(--primary-text-color);
-    transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter .button{
     font-family: inherit;
@@ -339,7 +349,7 @@ flex-basis: calc((100% - 60px)/3);
 }
 .social-list-icon{
     fill:#AFB1B8;
-    transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Partners */
 .partners{
@@ -368,11 +378,11 @@ flex-basis: calc((100% - 60px)/3);
     border:rgba(175, 177, 184, 1);
     border-radius: 4px;
     border: 1px solid rgba(175, 177, 184, 1);
-    transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border, 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .partner-list-icon{
     fill:#AFB1B8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .partner-list-link:hover,
@@ -427,6 +437,14 @@ address{
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
+.sample-list-item{
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sample-list-item:hover,
+.sample-list-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .sample-list-item:hover .card-overlay{
     transform: translate(0, 0);
 
@@ -443,7 +461,12 @@ address{
     
 }
 .sample{
-   
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sample:hover
+.sample:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .sample-list-img{
     position: relative;
